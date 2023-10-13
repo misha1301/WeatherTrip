@@ -1,0 +1,37 @@
+.current_day_forecast-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.current_day_forecast-day {
+    font-size: 2.19em;
+    font-weight: 600;
+}
+
+.current_day_forecast-div {
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.75em;
+    align-items: center;
+    margin: 0.9375em 0 1.375em 0;
+}
+.current_day_forecast-div > img{
+    width: 3.75rem;
+    height: 3.75rem;
+}
+.current_day_forecast-temp {
+    font-size: 4.25em;
+    font-weight: 400;
+}
+
+.current_day_forecast-temp > sup {
+    font-size: 0.35em;
+    font-weight: 400;
+}
+
+.current_day_forecast-city {
+    font-size: 1.8em;
+    font-weight: 300;
+}

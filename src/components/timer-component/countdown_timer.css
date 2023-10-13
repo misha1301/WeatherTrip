@@ -1,0 +1,30 @@
+.countdown_timer-section{
+    max-width: 375px;
+    min-width: 235px;
+    height: 3.25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.countdown_timer-section h4{
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: #d7d7d7;
+}
+.countdown_timer-section p{
+    font-size: 1.625rem;
+    font-weight: 900;
+    color: white;
+    text-shadow: 0 0 3px rgba(5, 5, 5, 0.4);
+}
+
+.countdown_timer-section > div{
+    display: flex;
+    row-gap: 0.44rem;
+    flex-direction: column;
+    align-items: center;
+    height: min-content;
+}

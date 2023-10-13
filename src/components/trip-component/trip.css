@@ -1,0 +1,80 @@
+.trip-article{
+    flex-shrink: 0;
+    width: 11.25rem;
+    position: relative;
+}
+.trip-article:hover{
+    cursor: pointer;
+}
+.trip-article:focus{
+    border: 1px solid #1890ff;
+}
+.trip-article > input[type='radio']{
+    position: absolute;
+    opacity: 0;
+}
+.trip-article > input[type='radio']:checked + section{
+    border: 2px solid #1890ff;
+}
+.trip-article > button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    outline: none !important;
+    border: none;
+    background-color: rgba(18, 20, 26, 0.15);
+    height: 20px;
+    min-width: 20px;
+    flex-shrink: 0;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.75rem;
+    position: absolute;
+    right: 0;
+    transition: 200ms ease-in-out;
+    opacity: 100;
+}
+.trip-article > button:hover{
+    cursor: pointer;
+    background-color: rgba(18, 20, 26, 0.45);
+    color: white;
+}
+.trip-article > button:disabled{
+    opacity: 0;
+}
+
+.trip-figure{
+    width: 100%;
+    height: 10.3rem;
+    overflow: hidden;
+}
+.trip-figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.trip-section{
+    padding: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    background-color: #ffffff;
+    border: 2px solid rgba(187, 187, 187, 0.6);
+}
+.trip-section h1{
+    width: 100%;
+    font-weight: 700;
+    letter-spacing: -0.03rem;
+    font-size: 0.75rem;
+    line-height: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.trip-section p{
+    color: #8c8c8c;
+    font-weight: 500;
+    font-size: 0.625rem;
+    line-height: normal;
+}

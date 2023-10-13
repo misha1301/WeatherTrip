@@ -1,0 +1,56 @@
+#add_trip-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 11.25rem;
+    height: 10.3rem;
+    border: 0;
+    outline: none !important;
+    shape-outside: none !important;
+    background-color: #f2f4f8;
+    font-weight: 400;
+    line-height: normal;
+    color: black;
+    transition: background-color 200ms ease-in-out;
+}
+#add_trip-button-mobile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    max-width: 14.7rem;
+    padding: 10px;
+    border-radius: 10px;
+    border: 0;
+    outline: none !important;
+    shape-outside: none !important;
+    background-color: #f2f4f8;
+    font-weight: 400;
+    line-height: normal;
+    color: black;
+    transition: background-color 200ms ease-in-out;
+    font-size: 0.87rem;
+    column-gap: 0.35em;
+}
+#add_trip-button-mobile:hover,
+#add_trip-button:hover{
+    cursor: pointer;
+    background-color: #ebebee;
+}
+#add_trip-button-mobile:active,
+#add_trip-button:active{
+    background-color: #f2f4f8;
+    transition: none;
+}
+#add_trip-button > p:first-child{
+    font-size: 2.5rem;
+    letter-spacing: -0.05em;
+}
+#add_trip-button > p:last-child{
+    font-size: 1.125rem;
+    letter-spacing: -0.05em;
+}

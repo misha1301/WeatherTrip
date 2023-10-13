@@ -1,0 +1,68 @@
+.horizontal_scroll-section{
+    position: relative;
+    width: 100%;
+    max-width: max-content;
+    overflow: hidden;
+}
+.horizontal_scroll-nav{
+    position: relative;
+    width: 100%;
+    max-width: max-content;
+    display: grid;
+    grid-auto-flow: column;
+    gap: var(--scroll-list-gap);
+    padding: 0 var(--main-layout-padding-small);
+    overflow-y: hidden;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    overscroll-behavior-x: contain;
+
+    scroll-snap-type: inline mandatory;
+    scroll-padding-inline: 40px;
+}
+
+.horizontal_scroll-nav *{
+    scroll-snap-align: start;
+}
+.horizontal_scroll-nav::-webkit-scrollbar{
+    display: none;
+}
+.horizontal_scroll-section .arrow-btn{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    outline: none !important;
+    border: none;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 40px;
+    width: 40px;
+    transition: background-color 200ms ease-in-out;
+    z-index: 30;
+}
+.horizontal_scroll-section .left-arrow{
+    left: 20px;
+    top: 50%;
+    margin-top: -20px;
+}
+.horizontal_scroll-section .right-arrow{
+    right: 20px;
+    top: 50%;
+    margin-top: -20px;
+}
+
+.horizontal_scroll-section .arrow-btn:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.horizontal_scroll-section .arrow-btn:active{
+    transition: none;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.horizontal_scroll-section .arrow-btn:disabled{
+    display: none;
+}
+
+

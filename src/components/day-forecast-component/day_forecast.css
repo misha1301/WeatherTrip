@@ -1,0 +1,29 @@
+.day_forecast-article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.day_forecast-article > h1{
+    font-size: 0.69rem;
+    font-weight: 500;
+    color: #8c8c8c;
+}
+.day_forecast-article > figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 2.8rem;
+    height: 2.8rem;
+    margin: 1.375rem 0 0.9rem 0;
+}
+.day_forecast-article img{
+    width: 100%;
+    height: 100%;
+}
+.day_forecast-article > p{
+    font-size: 0.69rem;
+    color: #414141;
+}
