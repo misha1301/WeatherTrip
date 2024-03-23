@@ -20,7 +20,7 @@
     width: 100%;
     max-width: 620px;
     min-width: 300px;
-    border-radius: 3px;
+    border-radius: 10px;
     box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.15);
 }
 
@@ -33,9 +33,11 @@
     font-size: 0.9375rem;
     font-weight: 700;
     color: black;
-    padding: 1.3em 1.7em;
+    padding: var(--add-trip-header-padding);
 }
-
+.form_title {
+    margin: 0;
+}
 .add_trip-form > .header > input[type='button'] {
     border: none;
     background-color: transparent;
@@ -49,6 +51,7 @@
 .add_trip-form > .header > input[type='button']:hover {
     background-color: #cecece;
     color: black;
+
 }
 
 .add_trip-form > .header > input[type='button']:active {
@@ -70,30 +73,17 @@
 }
 
 .add_trip-form > .main > .content > p {
+    margin: 0;
     font-size: 0.875rem;
     font-weight: 600;
     color: black;
 }
 
 .add_trip-form > .main > .content > p span {
+    margin: 0;
     color: #fc3030;
 }
 
-.add_trip_city-select {
-    border-radius: 2px;
-    border: var(--_form-border) !important;
-    width: 100%;
-    font-weight: 500;
-    font-size: 0.9375rem;
-    padding: 0.68em 0.87em;
-    min-height: 40px;
-}
-.add_trip_city-select:focus {
-    outline: none;
-}
-.add_trip_city-select > option:first-child{
-    color: #8c8c8c;
-}
 
 .add_trip_date-input {
     border-radius: 2px;
@@ -106,59 +96,12 @@
     color: #8c8c8c;
 }
 
-.add_trip_date-input::-webkit-calendar-picker-indicator {
-    opacity: 50%;
-    border-radius: 2px;
-}
-.add_trip_date-input::-webkit-calendar-picker-indicator:hover {
-    cursor: pointer;
-    opacity: 80%;
-    background-color:  #cecece;
-}
-
 .add_trip-form > .footer {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     column-gap: 0.5rem;
-    padding: 1.25rem 1rem;
+    padding: var(--add-trip-footer-padding);
     border-top: var(--_form-border);
     border-radius: 2px;
-}
-
-
-.add_trip-form > .footer > input {
-    border-radius: 2px;
-    font-weight: 600;
-    font-size: 0.875rem;
-    padding: 0.5em 1em;
-    transition: 200ms ease-in-out;
-}
-
-.add_trip-form > .footer > input[type='button'] {
-    background-color: transparent;
-    border: var(--_form-border);
-}
-
-.add_trip-form > .footer > input[type='button']:hover {
-    background-color: #cecece;
-}
-
-.add_trip-form > .footer > input[type='button']:active {
-    transition: none;
-    background-color: transparent;
-}
-
-.add_trip-form > .footer > input[type='submit'] {
-    background-color: #2B97FB;
-    color: white;
-}
-
-.add_trip-form > .footer > input[type='submit']:hover {
-    background-color: #2286e1;
-}
-
-.add_trip-form > .footer > input[type='submit']:active {
-    background-color: #2B97FB;
-    transition: none;
 }

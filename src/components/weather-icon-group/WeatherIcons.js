@@ -21,6 +21,7 @@ import {
     thunder_showers_night,
     thunder,
     wind,
+    error
 } from '../../assets'
 
  export const Icon = {
@@ -46,4 +47,5 @@ import {
     "thunder-showers-night":thunder_showers_night,
     "thunder":thunder,
     "wind":wind,
+    "error":error
 }

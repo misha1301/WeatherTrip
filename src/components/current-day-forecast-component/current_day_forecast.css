@@ -6,32 +6,50 @@
 }
 
 .current_day_forecast-day {
-    font-size: 2.19em;
+    margin: 0;
+    font-size: 2rem;
     font-weight: 600;
 }
 
 .current_day_forecast-div {
     display: flex;
     flex-direction: row;
-    column-gap: 0.75em;
+    column-gap: 0.75rem;
     align-items: center;
-    margin: 0.9375em 0 1.375em 0;
+    margin: 0.9375rem 0 1.375rem 0;
 }
 .current_day_forecast-div > img{
     width: 3.75rem;
     height: 3.75rem;
 }
 .current_day_forecast-temp {
-    font-size: 4.25em;
+    margin: 0;
+    font-size: 4rem;
     font-weight: 400;
 }
 
 .current_day_forecast-temp > sup {
-    font-size: 0.35em;
+    margin: 0;
+    font-size: 0.5em;
     font-weight: 400;
 }
 
 .current_day_forecast-city {
-    font-size: 1.8em;
+    font-size: 1.8rem;
     font-weight: 300;
+    margin: 0;
+}
+
+#error_icon{
+    width: 8.75rem;
+    height: 8.75rem;
+}
+
+.current_day_forecast-error_message{
+    text-align: center;
+    color: #ffcd23;
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 0;
+    margin-bottom: 1rem;
 }

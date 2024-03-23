@@ -1,17 +1,17 @@
 *{
-    padding: 0;
-    margin: 0;
     box-sizing: border-box;
     font-family: Inter, serif;
 }
 html, body,  #root, main{
+    padding: 0;
+    margin: 0;
     min-height: 100vh;
     width: 100%;
     /*border: 1px dashed #55606e;*/
 }
 input:not([type="radio"]):not([type="checkbox"]){
     outline: none !important;
-    border: none;
+    /* border: none; */
     -webkit-appearance: none;
 }
 input:hover{
@@ -51,6 +51,7 @@ body{
     padding: var(--main-layout-padding-large) var(--main-layout-padding-small) var(--main-row-gap-medium) var(--main-layout-padding-small);
 }
 .main_app-section > header > h1{
+    margin: 0;
     font-weight: 500;
     font-size: 1.5rem;
 }
@@ -78,11 +79,10 @@ body{
     align-items: center;
     justify-content: center;
     width: 100%;
-    min-width: min-content;
     background-color: #110E3B;
     font-size: 0.57rem;
-    row-gap: 1rem;
-    padding: 1.25rem;
+    row-gap: 1.5rem;
+    padding: 2rem 1.25rem;
     margin-top: var(--main-layout-padding-small);
 }
 .country_scroll-list{
@@ -105,6 +105,7 @@ body{
     margin-bottom: 38px;
 }
 .weather_scroll-list > h2{
+    margin: 0;
     font-size: 1.125rem;
     letter-spacing: -0.05em;
     color: #363B64;

@@ -20,3 +20,4 @@ export {default as thunder_showers_day} from './thunder-showers-day.svg';
 export {default as thunder_showers_night} from './thunder-showers-night.svg';
 export {default as thunder} from './thunder.svg';
 export {default as wind} from  './wind.svg';
+export {default as error} from  './error.svg';

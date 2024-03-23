@@ -10,7 +10,6 @@ const Search = ({setState, ...inputProps}) => {
             show
                 ? labelRef.current.style.border = "1px solid black"
                 : labelRef.current.style.border = "1px solid rgba(242, 244, 248, 0)" ;
-            console.log(labelRef.current.offsetWidth, show);
         }
     }
     return (

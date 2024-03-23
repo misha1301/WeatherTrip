@@ -22,10 +22,6 @@ const CountdownTimer = ({futureDate}) => {
         }
     }, [futureDate]);
 
-    React.useEffect(() => {
-        console.log("rerender timer");
-    });
-
     const countTime = (endDate) => {
         if (endDate) {
             const countDate = new Date(endDate).getTime();
