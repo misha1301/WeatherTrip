@@ -1,4 +1,6 @@
 .countdown_timer-section{
+    padding: 0;
+    margin: 0;
     max-width: 375px;
     min-width: 235px;
     height: 3.25rem;
@@ -9,12 +11,14 @@
 }
 
 .countdown_timer-section h4{
+    margin: 0;
     text-transform: uppercase;
     font-size: 0.75rem;
     font-weight: 400;
     color: #d7d7d7;
 }
 .countdown_timer-section p{
+    margin: 0;
     font-size: 1.625rem;
     font-weight: 900;
     color: white;

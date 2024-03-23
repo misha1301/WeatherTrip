@@ -4,6 +4,10 @@
     max-width: max-content;
     overflow: hidden;
 }
+.empty{
+    width: 0;
+}
+
 .horizontal_scroll-nav{
     position: relative;
     width: 100%;

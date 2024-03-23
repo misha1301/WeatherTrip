@@ -17,7 +17,7 @@ const HorizontalScroll = ({children, disableArrow = false}) => {
         return () => {
             navEvent.removeEventListener("scroll", arrowVisible);
         }
-    }, []);
+    }, [children]);
 
     const arrowVisible = () => {
         if (!disableArrow) {
@@ -41,7 +41,7 @@ const HorizontalScroll = ({children, disableArrow = false}) => {
     }
 
     return (
-        <section className='horizontal_scroll-section'>
+        <section className={children ? 'horizontal_scroll-section' : 'horizontal_scroll-section empty'}>
             <button  onClick={() =>scrollHandler("left")} disabled={!disableArrow ? leftArrow : disableArrow}
                     className="left-arrow arrow-btn">
                 <img src={left_arrow} alt="left arrow"/>
